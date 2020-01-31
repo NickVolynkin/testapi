@@ -4,8 +4,6 @@ info:
   version: 1.0.0
   title: Test API
   # put the contact info for your development or API team
-  contact:
-    email: you@your-company.com
 
   license:
     name: Apache 2.0
@@ -19,6 +17,10 @@ tags:
   description: Operations available to regular developers
 
 paths:
+  /test:
+    get:
+      tags: [developers]
+      summary: make a test request
   /inventory:
     get:
       tags:
